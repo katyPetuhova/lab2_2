@@ -2,7 +2,7 @@
 #include <string>
 #include <fstream>
 using namespace std;
-//commits
+
 int main()
 {
 	ifstream file("test.txt");
@@ -41,7 +41,8 @@ int main()
 			max_word = str1;
 		}
 	}
-	cout << max_word << endl;
+
+	cout << "Longest word: "<<max_word << endl;
 	file.clear();
 	file.seekg(0);
 	count = 0;
@@ -70,6 +71,6 @@ int main()
 			count++;
 		}
 	}
-	cout << count;
+	cout <<"Number of occurrences: "<< count;
 	return 0;
 }
